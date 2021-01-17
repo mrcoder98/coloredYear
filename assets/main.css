@@ -1,0 +1,180 @@
+
+        @font-face{
+            src:url('thefont.TTF');
+            font-family: 'thefont';
+        }
+        body{
+            direction: ltr;
+            margin:0;
+        }
+        .red{
+            background-color:red;
+            color:red;
+        }
+        .orange{
+            background-color: orange;
+            color:orange;
+        }
+        .yellow{
+            background-color: yellow;
+            color:yellow;
+        }
+        .green{
+            background-color: #B6DE90;
+        }
+        .cyan{
+            background-color: #10A4C0;
+        }
+        .blue{
+            background-color: #0E50B6;
+        }
+        .highpurple{
+            background-color: #623DAC;
+            color: #623DAC;
+        }
+        .lightpurple{
+            background-color: #A739A3;
+            color:#A739A3;
+        }
+        .black{
+            background-color:rgb(68 68 68);
+        }
+        section.colored > div,section.bg > div,section.dates > div,section.colorKeys{
+            display:flex;
+        }
+        section.colored.topRight{
+            position: absolute;
+    right: 0;
+    direction: ltr;
+    top: 0;
+
+        }
+        section.colored.topRight div{
+            flex-direction: row-reverse;
+        }
+        section.colored.bottomRight{
+            position: absolute;
+    right: 0;
+    bottom: 0;
+        }
+        section.colored.bottomRight div{
+            flex-direction: row-reverse;
+        }
+        section.colored.bottomLeft{
+            position: absolute;
+    left: 0;
+    bottom: 0;
+        }
+        section.colored > div > span{
+            opacity:0.8;
+            width:25px;
+            height:25px;
+            display:inline-block;
+        }
+        section.bg{
+            position:absolute;
+            top:0;
+            right:0;
+            width:100%;
+            z-index: -1;
+        }
+        section.bg > div{
+            margin-top:40px;
+        }
+        section.bg > div > span:first-of-type{
+            margin-right:40px;
+        }
+        section.bg > div > span{
+            opacity: 0.2;
+    width: 4px;
+    background: black;
+    height: 4px;
+    border-radius: 100%;
+    margin-left: 40px;
+    display: inline-block;
+        }
+        h1.title{
+            position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 90pt;
+    margin: 40px 0;
+    z-index: 999;
+    font-family: thefont;
+        }
+        h1.title > sub{
+            font-family: arial;
+        font-size: 18pt;
+        }
+        h1.title span{
+            background-color: white !important;
+        }
+        section.dates{
+            position: relative;
+            background:white;
+            z-index: 1;
+                width: max-content;
+    margin: 140px auto 0 auto;
+}
+        
+section.dates > div > span{
+            width:25px;
+            height:25px;
+            border:1px black solid;
+            display:inline-block;
+}
+section.dates > section.days{
+    position: absolute;
+    display: flex;
+    top: -35px;
+}
+section.dates > section.days span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-left:2px;
+}
+section.dates > section.months{
+    width: max-content;
+    position: absolute;
+    left: -35px;
+}
+section.dates > section.months span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+section.colorKeys h1.title_keys{
+    text-align: left;
+    font-size: 35pt;
+    margin: 40px 40px 0 0;
+    z-index: 999;
+    font-family: thefont;
+}  
+section.colorKeys{
+    align-items: baseline;
+    justify-content: center;
+}
+section.colorKeys > div{
+    margin-right:15px;
+    font-weight: bold;
+}
+section.colorKeys span{
+    display: inline-block;
+    border:1px black solid;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}  
+section.colorKeys span{
+    margin-right:5px;
+}
